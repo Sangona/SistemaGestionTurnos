@@ -17,10 +17,21 @@
             </p>
         </section>
         <section>
-            <h2>Anexos</h2>
+            <h2>Los cuatro fundamentos de POO:</h2>
             <p>
-                Para más información, consulta el archivo de introducción: 
-                <a href="introduccion.md" target="_blank">Introducción</a>
+             Los 4 fundamentos de la POO son: encapsulamiento, herencia, polimorfismo y abstracción.
+             Encapsulamiento: Permite ocultar los detalles internos de un objeto y exponer solo lo necesario, protegiendo los datos y facilitando su manejo.
+             Herencia: Permite que una clase derive de otra, reutilizando código y estableciendo relaciones jerárquicas.
+             Polimorfismo: Permite que diferentes clases implementen un mismo método de manera distinta, adaptándose al contexto.
+             Abstracción: Simplifica sistemas complejos al modelarlos mediante conceptos más generales y manejables.
+            </p>
+            <h3>Requisitos iniciales del sistema:</h3>
+            <p>
+             1: Gestión de usuarios: El sistema debe permitir a los usuarios registrarse, iniciar sesión y cerrar sesión mediante credenciales seguras.
+             2: Procesamiento de datos: El sistema debe ser capaz de recibir, validar y procesar datos ingresados por el usuario según reglas predefinidas.
+             3: Almacenamiento de información: El sistema debe guardar los datos generados en una base de datos para su posterior consulta o modificación.
+             4: Generación de reportes: El sistema debe producir reportes o resúmenes basados en los datos almacenados, presentándolos en un formato legible.
+             5: Interacción entre objetos: El sistema debe permitir que diferentes objetos (como usuarios, productos o transacciones) interactúen entre sí según las reglas del dominio, por ejemplo, asociando un usuario a una acción específica.
             </p>
         </section>
     </main>
