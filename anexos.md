@@ -1,9 +1,7 @@
 # Anexos
 
-Aquí se incluye información adicional sobre el proyecto, como diagramas, tablas y referencias.
 
-## Diagrama de flujo
-(Inserta aquí un diagrama o descripción del flujo del proyecto).
+## Introducción
 
-## Referencias
-- [Enlace a documentación externa](https://example.com)
+Para más información sobre el paradigma orientado a objetos y los requisitos iniciales del sistema, consulta el siguiente archivo:  
+[Introducción](introducción.md)
