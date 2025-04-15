@@ -53,10 +53,6 @@
                     <li>El sistema guarda los datos en la base de datos.</li>
                     <li>El sistema confirma el registro exitoso.</li>
                 </ol>
-                <p><strong>Flujo alternativo:</strong></p>
-                <ul>
-                    <li>Si el email ya está registrado, el sistema muestra un mensaje de error y solicita un email diferente.</li>
-                </ul>
                 <p><strong>Postcondiciones:</strong> El usuario queda registrado en el sistema y puede iniciar sesión.</p>
             </article>
             <article>
@@ -76,12 +72,71 @@
                     <li>El sistema valida las credenciales.</li>
                     <li>El sistema permite el acceso al usuario.</li>
                 </ol>
-                <p><strong>Flujo alternativo:</strong></p>
-                <ul>
-                    <li>Si las credenciales son incorrectas, el sistema muestra un mensaje de error y solicita reintentar.</li>
-                </ul>
                 <p><strong>Postcondiciones:</strong> El usuario accede al sistema con su cuenta.</p>
             </article>
+            <article>
+    <h6>Caso de Uso 3: Solicitar Turno</h6>
+    <p><strong>Actor(es):</strong> Paciente</p>
+    <p><strong>Descripción:</strong> El paciente solicita un turno para una fecha y hora específicas.</p>
+    <p><strong>Precondiciones:</strong></p>
+    <ul>
+        <li>El paciente debe estar registrado e iniciar sesión.</li>
+        <li>Deben existir turnos disponibles.</li>
+    </ul>
+    <p><strong>Flujo principal:</strong></p>
+    <ol>
+        <li>El paciente accede a la sección de turnos.</li>
+        <li>El sistema muestra las fechas y horarios disponibles.</li>
+        <li>El paciente selecciona una fecha y hora.</li>
+        <li>El sistema valida la disponibilidad del turno.</li>
+        <li>El sistema guarda el turno en la base de datos.</li>
+        <li>El sistema confirma la reserva del turno.</li>
+    </ol>
+    <p><strong>Postcondiciones:</strong> El turno queda reservado para el paciente.</p>
+</article>
+
+<article>
+    <h6>Caso de Uso 4: Cancelar Turno</h6>
+    <p><strong>Actor(es):</strong> Paciente</p>
+    <p><strong>Descripción:</strong> El paciente cancela un turno previamente reservado.</p>
+    <p><strong>Precondiciones:</strong></p>
+    <ul>
+        <li>El paciente debe estar registrado e iniciar sesión.</li>
+        <li>El turno debe estar reservado.</li>
+    </ul>
+    <p><strong>Flujo principal:</strong></p>
+    <ol>
+        <li>El paciente accede a la sección de turnos reservados.</li>
+        <li>El sistema muestra los turnos reservados por el paciente.</li>
+        <li>El paciente selecciona el turno a cancelar.</li>
+        <li>El sistema solicita confirmación para cancelar el turno.</li>
+        <li>El paciente confirma la cancelación.</li>
+        <li>El sistema elimina el turno de la base de datos.</li>
+        <li>El sistema confirma la cancelación.</li>
+    </ol>
+    <p><strong>Postcondiciones:</strong> El turno queda cancelado y disponible para otros pacientes.</p>
+</article>
+
+<article>
+    <h6>Caso de Uso 5: Generar Reporte de Turnos</h6>
+    <p><strong>Actor(es):</strong> Administrador</p>
+    <p><strong>Descripción:</strong> El administrador genera un reporte con los turnos reservados en un rango de fechas.</p>
+    <p><strong>Precondiciones:</strong></p>
+    <ul>
+        <li>El administrador debe iniciar sesión.</li>
+        <li>Deben existir turnos reservados en el rango de fechas seleccionado.</li>
+    </ul>
+    <p><strong>Flujo principal:</strong></p>
+    <ol>
+        <li>El administrador accede a la sección de reportes.</li>
+        <li>El sistema solicita un rango de fechas.</li>
+        <li>El administrador ingresa las fechas y envía la solicitud.</li>
+        <li>El sistema busca los turnos reservados en el rango de fechas.</li>
+        <li>El sistema genera un reporte con los datos encontrados.</li>
+        <li>El sistema muestra el reporte al administrador.</li>
+    </ol>
+    <p><strong>Postcondiciones:</strong> El administrador obtiene un reporte con los turnos reservados.</p>
+</article>
         </section>
     </main>
 </body>
