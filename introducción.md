@@ -25,13 +25,63 @@
              Abstracción: Simplifica sistemas complejos al modelarlos mediante conceptos más generales y manejables.
             </p>
             <h3>Requisitos iniciales del sistema:</h3>
-            <p>
-             1: Gestión de usuarios: El sistema debe permitir a los usuarios registrarse, iniciar sesión y cerrar sesión mediante credenciales seguras.
-             2: Procesamiento de datos: El sistema debe ser capaz de recibir, validar y procesar datos ingresados por el usuario según reglas predefinidas.
-             3: Almacenamiento de información: El sistema debe guardar los datos generados en una base de datos para su posterior consulta o modificación.
-             4: Generación de reportes: El sistema debe producir reportes o resúmenes basados en los datos almacenados, presentándolos en un formato legible.
-             5: Interacción entre objetos: El sistema debe permitir que diferentes objetos (como usuarios, productos o transacciones) interactúen entre sí según las reglas del dominio, por ejemplo, asociando un usuario a una acción específica.
-            </p>
+            <ol>
+                <li><strong>Gestión de usuarios:</strong> El sistema debe permitir a los usuarios registrarse, iniciar sesión y cerrar sesión mediante credenciales seguras.</li>
+                <li><strong>Procesamiento de datos:</strong> El sistema debe ser capaz de recibir, validar y procesar datos ingresados por el usuario según reglas predefinidas.</li>
+                <li><strong>Almacenamiento de información:</strong> El sistema debe guardar los datos generados en una base de datos para su posterior consulta o modificación.</li>
+                <li><strong>Generación de reportes:</strong> El sistema debe producir reportes o resúmenes basados en los datos almacenados, presentándolos en un formato legible.</li>
+                <li><strong>Interacción entre objetos:</strong> El sistema debe permitir que diferentes objetos (como usuarios, productos o transacciones) interactúen entre sí según las reglas del dominio, por ejemplo, asociando un usuario a una acción específica.</li>
+            </ol>
+        </section>
+        <section>
+            <h4>Casos de uso:</h4>
+            <article>
+                <h5>Caso de Uso 1: Registro de Usuario</h5>
+                <p><strong>Actor(es):</strong> Usuario</p>
+                <p><strong>Descripción:</strong> El usuario se registra en el sistema proporcionando sus datos personales y credenciales.</p>
+                <p><strong>Precondiciones:</strong></p>
+                <ul>
+                    <li>El usuario no debe estar registrado previamente.</li>
+                    <li>El sistema debe estar disponible.</li>
+                </ul>
+                <p><strong>Flujo principal:</strong></p>
+                <ol>
+                    <li>El usuario accede a la página de registro.</li>
+                    <li>El sistema solicita los datos personales (nombre, email, contraseña).</li>
+                    <li>El usuario completa el formulario y lo envía.</li>
+                    <li>El sistema valida los datos ingresados.</li>
+                    <li>El sistema guarda los datos en la base de datos.</li>
+                    <li>El sistema confirma el registro exitoso.</li>
+                </ol>
+                <p><strong>Flujo alternativo:</strong></p>
+                <ul>
+                    <li>Si el email ya está registrado, el sistema muestra un mensaje de error y solicita un email diferente.</li>
+                </ul>
+                <p><strong>Postcondiciones:</strong> El usuario queda registrado en el sistema y puede iniciar sesión.</p>
+            </article>
+            <article>
+                <h5>Caso de Uso 2: Inicio de Sesión</h5>
+                <p><strong>Actor(es):</strong> Usuario</p>
+                <p><strong>Descripción:</strong> El usuario inicia sesión en el sistema utilizando sus credenciales.</p>
+                <p><strong>Precondiciones:</strong></p>
+                <ul>
+                    <li>El usuario debe estar registrado.</li>
+                    <li>El sistema debe estar disponible.</li>
+                </ul>
+                <p><strong>Flujo principal:</strong></p>
+                <ol>
+                    <li>El usuario accede a la página de inicio de sesión.</li>
+                    <li>El sistema solicita el email y la contraseña.</li>
+                    <li>El usuario ingresa sus credenciales y las envía.</li>
+                    <li>El sistema valida las credenciales.</li>
+                    <li>El sistema permite el acceso al usuario.</li>
+                </ol>
+                <p><strong>Flujo alternativo:</strong></p>
+                <ul>
+                    <li>Si las credenciales son incorrectas, el sistema muestra un mensaje de error y solicita reintentar.</li>
+                </ul>
+                <p><strong>Postcondiciones:</strong> El usuario accede al sistema con su cuenta.</p>
+            </article>
         </section>
     </main>
 </body>
