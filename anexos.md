@@ -3,5 +3,5 @@
 
 ## Introducción
 
-Para más información sobre el paradigma orientado a objetos y los requisitos iniciales del sistema, consulta el siguiente archivo:  
-[Introducción](introducción.md)
+Para más información sobre el diseño orientado a objetos, siga el siguiente enlace:  
+[Anexo - Introducción al Diseño Orientado a Objetos](introducción.md)
