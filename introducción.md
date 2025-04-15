@@ -16,7 +16,7 @@
             </p>
         </section>
         <section>
-            <h2>Los cuatro fundamentos de POO:</h2>
+            <h1>Los cuatro fundamentos de POO:</h1>
             <p>
              Los 4 fundamentos de la POO son: encapsulamiento, herencia, polimorfismo y abstracción.
              Encapsulamiento: Permite ocultar los detalles internos de un objeto y exponer solo lo necesario, protegiendo los datos y facilitando su manejo.
@@ -24,7 +24,7 @@
              Polimorfismo: Permite que diferentes clases implementen un mismo método de manera distinta, adaptándose al contexto.
              Abstracción: Simplifica sistemas complejos al modelarlos mediante conceptos más generales y manejables.
             </p>
-            <h3>Requisitos iniciales del sistema:</h3>
+            <h1>Requisitos iniciales del sistema:</h1>
             <ol>
                 <li><strong>Gestión de usuarios:</strong> El sistema debe permitir a los usuarios registrarse, iniciar sesión y cerrar sesión mediante credenciales seguras.</li>
                 <li><strong>Procesamiento de datos:</strong> El sistema debe ser capaz de recibir, validar y procesar datos ingresados por el usuario según reglas predefinidas.</li>
@@ -34,7 +34,7 @@
             </ol>
         </section>
         <section>
-            <h4>Casos de uso:</h4>
+            <h1>Casos de uso:</h1>
             <article>
                 <h5><strong>Caso de Uso 1: Registro de Usuario</strong></h5>
                 <p><strong>Actor(es):</strong> Usuario</p>
@@ -94,47 +94,15 @@
                 </ol>
                 <p><strong>Postcondiciones:</strong> El turno queda reservado para el paciente.</p>
             </article>
-            <article>
-                <h5><strong>Caso de Uso 4: Cancelar Turno</strong></h5>
-                <p><strong>Actor(es):</strong> Paciente</p>
-                <p><strong>Descripción:</strong> El paciente cancela un turno previamente reservado.</p>
-                <p><strong>Precondiciones:</strong></p>
-                <ul>
-                    <li>El paciente debe estar registrado e iniciar sesión.</li>
-                    <li>El turno debe estar reservado.</li>
-                </ul>
-                <p><strong>Flujo principal:</strong></p>
-                <ol>
-                    <li>El paciente accede a la sección de turnos reservados.</li>
-                    <li>El sistema muestra los turnos reservados por el paciente.</li>
-                    <li>El paciente selecciona el turno a cancelar.</li>
-                    <li>El sistema solicita confirmación para cancelar el turno.</li>
-                    <li>El paciente confirma la cancelación.</li>
-                    <li>El sistema elimina el turno de la base de datos.</li>
-                    <li>El sistema confirma la cancelación.</li>
-                </ol>
-                <p><strong>Postcondiciones:</strong> El turno queda cancelado y disponible para otros pacientes.</p>
-            </article>
-            <article>
-                <h5><strong>Caso de Uso 5: Generar Reporte de Turnos</strong></h5>
-                <p><strong>Actor(es):</strong> Administrador</p>
-                <p><strong>Descripción:</strong> El administrador genera un reporte con los turnos reservados en un rango de fechas.</p>
-                <p><strong>Precondiciones:</strong></p>
-                <ul>
-                    <li>El administrador debe iniciar sesión.</li>
-                    <li>Deben existir turnos reservados en el rango de fechas seleccionado.</li>
-                </ul>
-                <p><strong>Flujo principal:</strong></p>
-                <ol>
-                    <li>El administrador accede a la sección de reportes.</li>
-                    <li>El sistema solicita un rango de fechas.</li>
-                    <li>El administrador ingresa las fechas y envía la solicitud.</li>
-                    <li>El sistema busca los turnos reservados en el rango de fechas.</li>
-                    <li>El sistema genera un reporte con los datos encontrados.</li>
-                    <li>El sistema muestra el reporte al administrador.</li>
-                </ol>
-                <p><strong>Postcondiciones:</strong> El administrador obtiene un reporte con los turnos reservados.</p>
-            </article>
+        </section>
+        <section>
+            <h1>Boceto Inicial del Diseño de Clases</h1>
+            <img src="Clases.drawio.png" alt="Boceto del Diseño de Clases" width="600">
+            <p>
+                <a href="https://raw.githubusercontent.com/Sangona/SistemaGestionTurnos/main/Clases.drawio.png" target="_blank">
+                    Ver imagen en línea
+                </a>
+            </p>
         </section>
     </main>
 </body>
